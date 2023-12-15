@@ -1,0 +1,86 @@
+.actualité {
+    padding: 50px 100px ;
+
+    &-title {
+        color: #FF8000;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    &-summary {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    &-card-container {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        position: relative;
+    
+        .card {
+            text-align: center;
+            height: 100%;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: calc(25% - 20px); 
+            margin: 0 20px 30px 20px; 
+            z-index: 1;
+
+            &-img {
+                width: 100%;
+                height: auto;
+                border-radius: 10px 10px 0 0;
+
+                &-papillon-droit {
+                    position: absolute;
+                    top: -5%;
+                    right: -2%;
+                }
+
+                &-papillon-gauche {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    z-index: 1;
+                }
+            }
+            
+            &-h3 {
+                text-align: justify;
+            }
+
+            &-p {
+                text-align: justify;
+            }
+                   
+            &-btn {
+                width: auto;
+                margin-top: 20px;
+                padding: 10px 50px;
+                border: 1px solid #FF8000;
+                border-radius: 5px;
+                color: #FF8000;
+                background-color: white;
+            }
+            
+        }
+
+
+  
+    }    
+
+    &-btn {
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+        border-radius: 140px;
+        border: 2px solid #FF8000; 
+        padding: 10px 20px;
+        color: #FF8000;
+        letter-spacing: 5.8px;
+
+    }
+    
+}
+

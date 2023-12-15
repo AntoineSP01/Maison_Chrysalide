@@ -1,0 +1,28 @@
+.concept {
+  padding: 50px;
+}
+.concept h2 {
+  text-align: center;
+  color: #FF8000;
+}
+.concept-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  gap: 70px;
+}
+.concept-texte {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.concept-btn {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: 140px;
+  border: 2px solid #FF8000;
+  padding: 10px 20px;
+  color: #FF8000;
+  letter-spacing: 5.8px;
+}/*# sourceMappingURL=concept.css.map */

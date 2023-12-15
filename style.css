@@ -1,0 +1,19 @@
+@import url("https://fonts.google.com/specimen/Inter");
+
+@import url(CSS/Header/header.css);
+@import url(CSS/Section1/section1.css);
+@import url(CSS/Histoire/histoire.css);
+@import url(CSS/Concept/concept.css);
+@import url(CSS/Timeline/timeline.css);
+@import url(CSS/Actualité/actualité.css);
+@import url(CSS/Equipe/equipe.css);
+@import url(CSS/Galerie/galerie.css);
+@import url(CSS/Footer/footer.css);
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
