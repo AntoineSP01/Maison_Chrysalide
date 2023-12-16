@@ -1,9 +1,14 @@
 .concept {
   padding: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .concept h2 {
   text-align: center;
   color: #FF8000;
+  margin-bottom: 20px;
 }
 .concept-img {
   display: flex;
@@ -11,6 +16,22 @@
   align-items: center;
   margin-bottom: 50px;
   gap: 70px;
+  width: 100%;
+}
+@media screen and (max-width: 1200px) {
+  .concept-img {
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .concept-img {
+    gap: 5px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .concept-img {
+    flex-direction: column;
+  }
 }
 .concept-texte {
   text-align: center;

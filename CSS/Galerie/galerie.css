@@ -6,48 +6,90 @@
 }
 .galerie-content {
   width: 60%;
-  padding: 20px;
-  height: 70vh;
+  padding: 30px;
   border: 2px solid #FF8000;
-  margin: 20px;
   border-radius: 20px;
 }
-.galerie-content-title {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  flex-shrink: 0;
-  color: #FF8000;
-  font-family: Fira Sans;
-  font-size: 70px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 35.2px;
-  text-align: justify;
+@media screen and (max-width: 1100px) {
+  .galerie-content {
+    width: 80%;
+  }
 }
-.galerie-content h3 {
-  width: 310.383px;
-  height: 45px;
-  flex-shrink: 0;
+@media screen and (max-width: 900px) {
+  .galerie-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .galerie-content {
+    width: 100%;
+  }
+}
+.galerie-content-title-h2 {
+  color: #FF8000;
+  font-size: 70px;
+  font-weight: 700;
+}
+@media screen and (max-width: 768px) {
+  .galerie-content-title-h2 {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .galerie-content-title-h2 {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .galerie-content-title-h2 {
+    font-size: 30px;
+  }
+}
+.galerie-content-title-h3 {
   color: #FFD3A6;
-  font-family: Inter;
   font-size: 18px;
-  font-style: normal;
-  font-weight: 900;
-  line-height: 25.2px;
 }
 .galerie-content-text {
-  width: 387.485px;
   color: #151D53;
   text-align: justify;
-  font-family: KoHo;
   font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 22.4px;
 }
 .galerie-content-image {
   width: 70%;
   margin-left: 50%;
   margin-bottom: 50px;
+}
+@media screen and (max-width: 900px) {
+  .galerie-content-image {
+    margin-left: 15%;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .galerie-content-image {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+.galerie-content-btn {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: 140px;
+  border: 2px solid #FF8000;
+  padding: 10px 20px;
+  color: #FF8000;
+  letter-spacing: 5.8px;
+}
+@media screen and (max-width: 450px) {
+  .galerie-content-btn {
+    letter-spacing: 3px;
+  }
+}
+@media screen and (max-width: 370px) {
+  .galerie-content-btn {
+    letter-spacing: 1px;
+  }
 }/*# sourceMappingURL=galerie.css.map */

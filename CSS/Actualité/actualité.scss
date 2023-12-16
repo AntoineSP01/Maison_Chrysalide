@@ -1,6 +1,14 @@
 .actualité {
     padding: 50px 100px ;
 
+    @media screen and (max-width: 1100px) {
+           padding: 50px 50px;
+    }
+
+    @media screen and (max-width: 500px) {
+        padding: 50px 0px;
+ }
+
     &-title {
         color: #FF8000;
         text-align: center;
@@ -17,6 +25,20 @@
         justify-content: space-between;
         padding: 20px;
         position: relative;
+
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+            margin-inline: 10%;
+        }
+
+        @media screen and (max-width: 600px) {
+            margin-inline: 3%;
+        }
+
+        @media screen and (max-width: 450px) {
+            margin-inline: 0;
+        }
+        
     
         .card {
             text-align: center;
@@ -26,6 +48,14 @@
             width: calc(25% - 20px); 
             margin: 0 20px 30px 20px; 
             z-index: 1;
+            border: #FF8000 2px solid;
+            
+
+            @media screen and (max-width: 1100px) {
+                width: auto;
+                margin: 0 20px 30px 20px;
+            }
+        
 
             &-img {
                 width: 100%;
@@ -36,6 +66,11 @@
                     position: absolute;
                     top: -5%;
                     right: -2%;
+
+                    @media screen and (max-width: 768px) {
+                        top: -2%;
+                        right: -4%;
+                    }
                 }
 
                 &-papillon-gauche {
@@ -43,15 +78,49 @@
                     bottom: 0;
                     left: 0;
                     z-index: 1;
+
+                    @media screen and (max-width: 1100px) {
+                        bottom: 0;
+                        left: 0;
+                    }
+
+                    @media screen and (max-width: 768px) {
+                        bottom: 0;
+                        right: 0;
+                    }
                 }
             }
             
-            &-h3 {
-                text-align: justify;
+            &-title {
+                font-size: 2vw;
+
+                @media screen and (max-width: 768px) {
+                    font-size: 3.5vw;
+                }
+
+                @media screen and (max-width: 500px) {
+                    font-size: 4vw; 
+                }
+
+                @media screen and (max-width: 400px) {
+                        font-size: 5vw; 
+                     }
             }
 
-            &-p {
-                text-align: justify;
+            &-text {
+                font-size: 1.3vw;
+
+                @media screen and (max-width: 768px) {
+                       font-size: 2.5vw; 
+                    }
+
+                    @media screen and (max-width: 500px) {
+                        font-size: 3vw; 
+                    }
+
+                    @media screen and (max-width: 400px) {
+                        font-size: 4vw; 
+                     }
             }
                    
             &-btn {
@@ -62,13 +131,15 @@
                 border-radius: 5px;
                 color: #FF8000;
                 background-color: white;
+
+                @media screen and (max-width: 950px) {
+                    padding: 10px 20px;
+                }
             }
             
         }
-
-
-  
-    }    
+    
+    }
 
     &-btn {
         display: flex;
@@ -79,8 +150,6 @@
         padding: 10px 20px;
         color: #FF8000;
         letter-spacing: 5.8px;
-
     }
-    
-}
 
+}
